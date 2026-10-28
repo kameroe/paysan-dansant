@@ -57,7 +57,6 @@ C'est son anniversaire, elle revient. Je crois qu’elle peut m’aider si tant 
     numero: 1,
     date: "28 oct. 2026",
     ciel: "nuit claire",
-    exemple: true,
     titre: "Pourquoi ce carnet",
     texte: `Il y a quelques années, j'écrivais déjà quelque part. Puis j'ai tout supprimé, et aujourd'hui, j'aimerais tellement relire ce que je pensais à l'époque et voir la manière dont je m'exprimais.
 Alors je recommence, autrement. Chaque page est d'abord écrite chez moi, et ce site n'en est qu'une copie. Si un jour il disparaît, le carnet, lui, restera.`,
