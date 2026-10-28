@@ -36,35 +36,12 @@ Laisse une ligne vide pour commencer un nouveau paragraphe.`,
 const CARNET = [
 
   {
-    numero: 3,
-    date: "28 oct. 2026",
-    ciel: "couvert, frais",
-    exemple: true,
-    titre: "Fougère, dessinée par une formule",
-    image: "images/fougere.png",
-    legende: "quatre règles simples, répétées, et une feuille apparaît",
-    texte: `Ici tu pourras mettre une photo de terrain, un croquis scanné ou une capture. Ce dessin est une fougère de Barnsley : quatre transformations répétées des milliers de fois suffisent à faire pousser la forme.`,
-  },
-
-  {
-    numero: 2,
-    date: "28 oct. 2026",
-    ciel: "vent faible",
-    exemple: true,
-    titre: "Note vocale, en marchant",
-    audio: "audios/vent-et-oiseaux.wav",
-    texte: `Ce son est un exemple généré (du vent et quelques oiseaux). À la place, tu déposeras tes propres enregistrements : une pensée dite à voix haute, le bruit d'un ruisseau, un retour de stage.`,
-    note: "parfois c'est plus simple de parler que d'écrire",
-  },
-
-  {
     numero: 1,
     date: "28 oct. 2026",
     ciel: "nuit claire",
     exemple: true,
     titre: "Pourquoi ce carnet",
-    texte: `Il y a quelques années, j'écrivais déjà quelque part. Puis j'ai tout supprimé, et aujourd'hui j'aimerais tellement relire ce que je pensais à l'époque, comment je le disais.
-
+    texte: `Il y a quelques années, j'écrivais déjà quelque part. Puis j'ai tout supprimé, et aujourd'hui, j'aimerais tellement relire ce que je pensais à l'époque et voir la manière dont je m'exprimais.
 Alors je recommence, autrement. Chaque page est d'abord écrite chez moi, et ce site n'en est qu'une copie. Si un jour il disparaît, le carnet, lui, restera.`,
     pensee: "On ne se baigne jamais deux fois dans le même fleuve, disait Héraclite. On ne se relit sans doute jamais deux fois avec les mêmes yeux non plus.",
     note: "dans cinq ans, relire celle-ci en premier",
