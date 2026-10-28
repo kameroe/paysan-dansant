@@ -1,0 +1,235 @@
+<title>Paysan dansant</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Carnet personnel : textes, sons et images, au fil des jours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Literata:ital,opsz,wght@0,7..72,400;1,7..72,400&family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout : un carnet de terrain, une seule colonne datée, la marge porte les relevés */
+:root {
+  --paper: #EDF0E3;
+  --sheet: #F6F7EF;
+  --ink: #252E1E;
+  --muted: #5B6450;
+  --moss: #4B6A31;
+  --bark: #6E4B2C;
+  --rule: rgba(75, 106, 49, 0.12);
+  --line: rgba(37, 46, 30, 0.16);
+  --f-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --f-body: "Literata", Georgia, "Times New Roman", serif;
+  --f-hand: "Caveat", "Segoe Print", "Comic Sans MS", cursive;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #151A12; --sheet: #1C2318; --ink: #E2E6D5; --muted: #9BA48C;
+    --moss: #A1BD7C; --bark: #CDA27A; --rule: rgba(161, 189, 124, 0.08); --line: rgba(226, 230, 213, 0.14);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #151A12; --sheet: #1C2318; --ink: #E2E6D5; --muted: #9BA48C;
+  --moss: #A1BD7C; --bark: #CDA27A; --rule: rgba(161, 189, 124, 0.08); --line: rgba(226, 230, 213, 0.14);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 3.5rem 4rem;
+}
+header { display: grid; gap: 0.25rem; margin-bottom: 3rem; }
+.kicker { font-family: var(--f-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+h1 {
+  font-family: var(--f-display); font-weight: 400; font-size: clamp(2.6rem, 8vw, 4rem);
+  line-height: 1; margin: 0; letter-spacing: -0.02em; text-wrap: balance;
+}
+h1 em { font-style: normal; color: var(--moss); }
+.tagline { font-family: var(--f-hand); font-size: 1.6rem; color: var(--bark); margin: 0.25rem 0 0; line-height: 1.2; }
+.feed { display: grid; gap: 2.5rem; }
+.entry {
+  display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1.5rem;
+}
+.meta {
+  font-family: var(--f-mono); font-size: 0.75rem; line-height: 1.6; color: var(--muted);
+  border-top: 1px solid var(--ink); padding-top: 0.6rem; display: grid; gap: 0.15rem; align-content: start;
+}
+.meta .n { color: var(--moss); }
+.meta dt { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.6875rem; }
+.meta dd { margin: 0 0 0.35rem; color: var(--ink); }
+.sheet {
+  background: var(--sheet); border: 1px solid var(--line); padding: 1.5rem 1.75rem 1.75rem;
+  min-width: 0;
+}
+.sheet h2 { font-family: var(--f-display); font-weight: 500; font-size: 1.5rem; line-height: 1.25; margin: 0 0 0.75rem; text-wrap: balance; }
+.sheet p { margin: 0 0 1rem; max-width: 65ch; }
+.sheet p:last-child { margin-bottom: 0; }
+.note { font-family: var(--f-hand); font-size: 1.35rem; color: var(--bark); line-height: 1.3; }
+.ex { font-family: var(--f-mono); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bark); border: 1px solid var(--bark); padding: 0.1rem 0.4rem; display: inline-block; margin-bottom: 0.75rem; }
+figure { margin: 0 0 1rem; }
+figure img { display: block; width: 100%; max-width: 100%; height: auto; background: var(--paper); border: 1px solid var(--line); }
+figcaption { font-family: var(--f-hand); font-size: 1.3rem; color: var(--bark); margin-top: 0.4rem; }
+.player { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.9rem; align-items: center; border: 1px solid var(--line); padding: 0.75rem 0.9rem; margin-bottom: 1rem; background: var(--paper); }
+.play {
+  width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1.5px solid var(--moss); background: transparent;
+  color: var(--moss); cursor: pointer; display: grid; place-items: center; padding: 0;
+}
+.play:hover { background: var(--moss); color: var(--sheet); }
+.play:focus-visible, input[type="range"]:focus-visible { outline: 2px solid var(--bark); outline-offset: 2px; }
+.play svg { width: 1rem; height: 1rem; fill: currentColor; }
+input[type="range"] { width: 100%; accent-color: var(--moss); margin: 0; }
+.time { font-family: var(--f-mono); font-size: 0.8125rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.75rem; }
+.theme { display: inline-flex; border: 1px solid var(--line); background: var(--sheet); }
+.theme button { font-family: var(--f-mono); font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); background: transparent; border: 0; padding: 0.4rem 0.65rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; }
+.theme button + button { border-left: 1px solid var(--line); }
+.theme button svg { width: 0.85rem; height: 0.85rem; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.theme button[aria-pressed="true"] { background: var(--moss); color: var(--sheet); }
+.theme button:focus-visible { outline: 2px solid var(--bark); outline-offset: 1px; }
+.epigraph { margin: 1.5rem 0 0; padding-left: 1rem; border-left: 1px solid var(--bark); max-width: 34rem; }
+.epigraph p { font-family: var(--f-body); font-style: italic; font-size: 1.15rem; margin: 0; }
+.epigraph cite { display: block; font-style: normal; font-family: var(--f-mono); font-size: 0.75rem; color: var(--muted); margin-top: 0.3rem; }
+.lead::first-letter { font-family: var(--f-display); font-size: 3.4em; float: left; line-height: 0.85; padding: 0.08em 0.12em 0 0; color: var(--moss); }
+.fleuron { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1.5rem; color: var(--bark); font-size: 1.4rem; line-height: 1; }
+.fleuron span { grid-column: 2; text-align: center; }
+@media (max-width: 640px) { .fleuron { grid-template-columns: minmax(0, 1fr); } .fleuron span { grid-column: 1; } }
+.pensee { font-family: var(--f-body); font-style: italic; color: var(--muted); }
+footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-family: var(--f-mono); font-size: 0.75rem; color: var(--muted); }
+@media (max-width: 640px) {
+  .entry { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
+  .meta { grid-template-columns: repeat(3, auto); justify-content: start; column-gap: 1.25rem; }
+  .meta dd { margin-bottom: 0; }
+  .sheet { padding: 1.25rem 1.1rem 1.4rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .play { transition: background 0.15s, color 0.15s; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="top">
+      <span class="kicker">Carnet de pensées, de sons et de terre · depuis octobre 2026</span>
+      <div class="theme" role="group" aria-label="Apparence">
+        <button type="button" id="theme-system" data-mode="system" aria-pressed="true"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="8" rx="1"/><path d="M6 14h4M8 11v3"/></svg>Système</button>
+        <button type="button" id="theme-light" data-mode="light" aria-pressed="false"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6L13 13M3 13l1.4-1.4M11.6 4.4L13 3"/></svg>Clair</button>
+        <button type="button" id="theme-dark" data-mode="dark" aria-pressed="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 10.5A6 6 0 0 1 5.5 3a6 6 0 1 0 7.5 7.5z"/></svg>Sombre</button>
+      </div>
+    </div>
+    <h1>Paysan <em>dansant</em></h1>
+    <p class="tagline">penser les pieds dans la terre</p>
+    <blockquote class="epigraph">
+      <p>« Quand je danse, je danse ; quand je dors, je dors. »</p>
+      <cite>Montaigne, Essais, livre III, chapitre 13</cite>
+    </blockquote>
+  </header>
+
+  <main class="feed" id="feed">
+    <noscript><p>Active JavaScript pour lire le carnet.</p></noscript>
+  </main>
+
+  <footer>Paysan dansant · écrit d'abord chez moi, ce site n'en est qu'une copie.</footer>
+</div>
+
+<script src="carnet.js"></script>
+<script>
+(function () {
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll(".theme button");
+  function applyTheme(mode) {
+    if (mode === "light" || mode === "dark") root.setAttribute("data-theme", mode);
+    else root.removeAttribute("data-theme");
+    buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.mode === mode)); });
+    try { localStorage.setItem("paysan-theme", mode); } catch (e) {}
+  }
+  var saved = "system";
+  try { saved = localStorage.getItem("paysan-theme") || "system"; } catch (e) {}
+  buttons.forEach(function (b) { b.addEventListener("click", function () { applyTheme(b.dataset.mode); }); });
+  applyTheme(saved);
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function fmt(sec) { sec = Math.max(0, Math.round(sec || 0)); return Math.floor(sec / 60) + ":" + String(sec % 60).padStart(2, "0"); }
+  var PLAY = '<path d="M4 2.5v11l9.5-5.5z"/>';
+  var PAUSE = '<path d="M4 2.5h3v11H4zM9 2.5h3v11H9z"/>';
+
+  function renderEntry(p) {
+    var num = String(p.numero || 0).padStart(3, "0");
+    var h = '<article class="entry" id="releve-' + esc(p.numero) + '">';
+    h += '<dl class="meta">';
+    h += '<div><dt>Relevé</dt><dd class="n">n° ' + num + '</dd></div>';
+    if (p.date) h += '<div><dt>Date</dt><dd>' + esc(p.date) + '</dd></div>';
+    if (p.ciel) h += '<div><dt>Ciel</dt><dd>' + esc(p.ciel) + '</dd></div>';
+    h += '</dl><div class="sheet">';
+    if (p.exemple) h += '<span class="ex">Exemple</span>';
+    if (p.titre) h += '<h2>' + esc(p.titre) + '</h2>';
+    if (p.image) {
+      h += '<figure><img src="' + esc(p.image) + '" alt="' + esc(p.legende || p.titre || "") + '" loading="lazy">';
+      if (p.legende) h += '<figcaption>' + esc(p.legende) + '</figcaption>';
+      h += '</figure>';
+    }
+    if (p.audio) {
+      h += '<div class="player"><button class="play" type="button" aria-label="Lire le son"><svg viewBox="0 0 16 16" aria-hidden="true">' + PLAY + '</svg></button>';
+      h += '<input type="range" min="0" max="100" step="0.1" value="0" aria-label="Position dans le son">';
+      h += '<span class="time">0:00</span><audio preload="metadata" src="' + esc(p.audio) + '"></audio></div>';
+    }
+    if (p.texte) {
+      String(p.texte).trim().split(/\n\s*\n/).forEach(function (para, i) {
+        h += '<p' + (i === 0 ? ' class="lead"' : '') + '>' + esc(para.trim()).replace(/\n/g, "<br>") + '</p>';
+      });
+    }
+    if (p.pensee) h += '<p class="pensee">' + esc(p.pensee) + '</p>';
+    if (p.note) h += '<p class="note">' + esc(p.note) + '</p>';
+    return h + '</div></article>';
+  }
+
+  var feed = document.getElementById("feed");
+  var pages = (typeof CARNET !== "undefined" && Array.isArray(CARNET)) ? CARNET.slice() : [];
+  pages.sort(function (a, b) { return (b.numero || 0) - (a.numero || 0); });
+  if (!pages.length) {
+    feed.innerHTML = '<p class="note">Le carnet est encore vide. Ajoute ta première page dans carnet.js.</p>';
+  } else {
+    feed.innerHTML = pages.map(renderEntry).join('<div class="fleuron" aria-hidden="true"><span>❦</span></div>');
+  }
+
+  var players = feed.querySelectorAll(".player");
+  players.forEach(function (pl) {
+    var audio = pl.querySelector("audio"), btn = pl.querySelector(".play"), svg = btn.querySelector("svg");
+    var seek = pl.querySelector("input"), time = pl.querySelector(".time");
+    function update() {
+      var d = audio.duration;
+      if (d && isFinite(d)) seek.value = String(Math.round((audio.currentTime / d) * 1000) / 10);
+      time.textContent = fmt(audio.currentTime) + (d && isFinite(d) ? " / " + fmt(d) : "");
+    }
+    btn.addEventListener("click", function () {
+      if (audio.paused) {
+        feed.querySelectorAll("audio").forEach(function (a) { if (a !== audio) a.pause(); });
+        audio.play().catch(function () { time.textContent = "son introuvable"; });
+      } else audio.pause();
+    });
+    audio.addEventListener("play", function () { svg.innerHTML = PAUSE; btn.setAttribute("aria-label", "Mettre en pause"); });
+    audio.addEventListener("pause", function () { svg.innerHTML = PLAY; btn.setAttribute("aria-label", "Lire le son"); });
+    audio.addEventListener("ended", function () { audio.currentTime = 0; update(); });
+    audio.addEventListener("timeupdate", update);
+    audio.addEventListener("loadedmetadata", update);
+    audio.addEventListener("error", function () { time.textContent = "son introuvable"; });
+    seek.addEventListener("input", function () { if (audio.duration) { audio.currentTime = (Number(seek.value) / 100) * audio.duration; update(); } });
+  });
+})();
+</script>
