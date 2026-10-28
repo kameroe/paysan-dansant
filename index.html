@@ -1,5 +1,9 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Paysan dansant</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Carnet personnel : textes, sons et images, au fil des jours.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +37,8 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+html, body { margin: 0; }
+img { max-width: 100%; }
 body {
   background-color: var(--paper);
   background-image:
@@ -118,6 +124,8 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line
   .play { transition: background 0.15s, color 0.15s; }
 }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header>
@@ -144,7 +152,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line
   <footer>Paysan dansant · écrit d'abord chez moi, ce site n'en est qu'une copie.</footer>
 </div>
 
-<script src="carnet.js"></script>
+<script src="carnet.js" charset="utf-8"></script>
 <script>
 (function () {
   var root = document.documentElement;
@@ -233,3 +241,5 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line
   });
 })();
 </script>
+</body>
+</html>
