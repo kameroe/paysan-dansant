@@ -26,5 +26,3 @@ mais trouver l’équilibre entre la souplesse et la dureté.
 C'est son anniversaire, elle revient. Je crois qu’elle peut m’aider si tant est qu’elle le veut. Je crois qu'elle est vraiment
  ouverte à ce que je lui parle de moi. Ça me fait peur de m’ouvrir, mais je trouve ça vraiment bon de sa part. J’ai parfois du mal à être 
  empathique, et je ne comprends pas toujours comment elle peut l’être autant. Mais je veux apprendre à recevoir ce qu’elle me donne et à lui donner moi aussi cet amour, avec de la sensibilité, sans me perdre dans la facilité.
-
-
