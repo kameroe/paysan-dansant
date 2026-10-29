@@ -38,7 +38,7 @@ const CARNET = [
     numero: 2,
     date: "29 oct. 2026",
     ciel: "nuit claire",
-    titre: "Que ce passe t-il actuellement ? du caca mou",
+    titre: "Que ce passe t-il actuellement ?",
     image: "images/bureau29-10-26.jpeg",
     legende: "révisions et écriture",
     audio: "audios/29-10-26.mp3",
