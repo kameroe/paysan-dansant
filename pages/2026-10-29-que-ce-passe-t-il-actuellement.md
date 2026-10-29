@@ -8,7 +8,7 @@ audio: audios/29-10-26.mp3
 pensee: Aimer est tout, être aimé aussi.
 ---
 
-Je suis épuisé et je ne trouve plus grand plaisir à ma vie en général. Petit à petit, je perds le sens de ma vie, qui auparavant était plus clair, plus déterminé par des principes tout faits. Ce qu'il se passe actuellement dans le monde et la trajectoire qu'il semble prendre me font peur.
+Je ne trouve plus grand plaisir à ma vie en général. Petit à petit, je perds le sens de ma vie, qui auparavant était plus clair, plus déterminé par des principes tout faits. Ce qu'il se passe actuellement dans le monde et la trajectoire qu'il semble prendre me font peur.
 
 Quand je compare ce que ma vie aurait pu être si j'avais fait des choix différents, si j'avais eu assez de courage pour me lancer, assez de courage pour croire en moi, peut-être que le sens de ma vie aurait été plus clair. Ou peut-être pas. Mais en tout cas, je sais que cette pensée, beaucoup l'ont eue, mais peu changent assez pour la rendre réelle.
 
