@@ -1,0 +1,6 @@
+# Fichiers fabriqués automatiquement (par build.js)
+carnet.js
+
+# Outils
+node_modules/
+.wrangler/

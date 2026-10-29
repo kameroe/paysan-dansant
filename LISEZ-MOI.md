@@ -9,7 +9,7 @@
 | `audios/` | Tes notes vocales et sons | Oui, tu y déposes tes fichiers |
 | `modeles/page.md` | Le modèle d'une page, avec tous les champs possibles | Tu le copies |
 | `index.html` | La mise en forme (couleurs, polices, disposition) | Rarement |
-| `carnet.js` | Fabriqué automatiquement à partir de `pages/` | Jamais |
+| `carnet.js` | Fabriqué automatiquement à partir de `pages/`, absent du dépôt | Jamais |
 | `build.js`, `wrangler.jsonc`, `frontmatter.json`, `.vscode/` | Réglages techniques | Jamais |
 
 ## Écrire une nouvelle page
@@ -51,7 +51,7 @@ Ajoute `brouillon: true` dans l'en-tête : la page reste dans ton dépôt mais n
 
 ## Voir le site sur ton ordi avant de publier
 
-Si Node.js est installé : `node build.js`, puis double-clique sur `index.html`. Sinon, publie simplement : le site en ligne est reconstruit à chaque `git push`.
+`carnet.js` n'est pas dans le dépôt : il est fabriqué à la demande. Pour un aperçu sur ton ordi, installe Node.js (nodejs.org, version LTS), puis tape `node build.js` et double-clique sur `index.html`. Relance `node build.js` après chaque modification. Sans Node.js, publie simplement : le site en ligne est reconstruit à chaque `git push`.
 
 ## Écrire confortablement dans VS Code
 
