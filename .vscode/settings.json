@@ -1,0 +1,15 @@
+{
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 26,
+    "editor.fontSize": 16,
+    "editor.quickSuggestions": { "other": false, "comments": false, "strings": false },
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off"
+  },
+  "files.encoding": "utf8",
+  "cSpell.language": "fr,en",
+  "ltex.language": "fr",
+  "zenMode.centerLayout": true,
+  "zenMode.hideLineNumbers": true
+}

@@ -113,6 +113,16 @@ input[type="range"] { width: 100%; accent-color: var(--moss); margin: 0; }
 .fleuron span { grid-column: 2; text-align: center; }
 @media (max-width: 640px) { .fleuron { grid-template-columns: minmax(0, 1fr); } .fleuron span { grid-column: 1; } }
 .pensee { font-family: var(--f-body); font-style: italic; color: var(--muted); }
+.texte { margin-bottom: 1rem; }
+.texte:last-child { margin-bottom: 0; }
+.texte h3 { font-family: var(--f-display); font-weight: 500; font-size: 1.2rem; margin: 1.5rem 0 0.5rem; text-wrap: balance; }
+.texte a { color: var(--moss); text-underline-offset: 0.15em; }
+.texte a:hover { color: var(--bark); }
+.texte blockquote { margin: 0 0 1rem; padding-left: 1rem; border-left: 1px solid var(--bark); font-style: italic; }
+.texte ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+.texte li { margin-bottom: 0.25rem; }
+.texte img { display: inline-block; max-width: 100%; height: auto; }
+.texte p.sep { text-align: center; color: var(--bark); font-size: 1.4rem; line-height: 1; margin: 1.5rem 0; }
 footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-family: var(--f-mono); font-size: 0.75rem; color: var(--muted); }
 @media (max-width: 640px) {
   .entry { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; }
@@ -197,7 +207,9 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line
       h += '<input type="range" min="0" max="100" step="0.1" value="0" aria-label="Position dans le son">';
       h += '<span class="time">0:00</span><audio preload="metadata" src="' + esc(p.audio) + '"></audio></div>';
     }
-    if (p.texte) {
+    if (p.html) {
+      h += '<div class="texte">' + p.html + '</div>';
+    } else if (p.texte) {
       String(p.texte).trim().split(/\n\s*\n/).forEach(function (para, i) {
         h += '<p' + (i === 0 ? ' class="lead"' : '') + '>' + esc(para.trim()).replace(/\n/g, "<br>") + '</p>';
       });

@@ -2,3 +2,10 @@ wrangler.jsonc
 LISEZ-MOI.md
 .git
 .assetsignore
+.vscode
+.frontmatter
+frontmatter.json
+pages
+modeles
+build.js
+node_modules

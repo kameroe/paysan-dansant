@@ -1,0 +1,32 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": ".",
+  "frontMatter.content.supportedFileTypes": ["md"],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Pages du carnet",
+      "path": "[[workspace]]/pages",
+      "filePrefix": "yyyy-MM-dd"
+    }
+  ],
+  "frontMatter.templates.folder": "modeles",
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        { "title": "Titre", "name": "title", "type": "string" },
+        { "title": "Date", "name": "date", "type": "datetime", "default": "{{now}}", "isPublishDate": true },
+        { "title": "Ciel", "name": "ciel", "type": "string" },
+        { "title": "Image", "name": "image", "type": "image", "isPreviewImage": true },
+        { "title": "Légende de l'image", "name": "legende", "type": "string" },
+        { "title": "Son", "name": "audio", "type": "file", "fileExtensions": ["mp3", "m4a", "ogg", "wav"] },
+        { "title": "Pensée", "name": "pensee", "type": "string", "multiline": true },
+        { "title": "Note manuscrite", "name": "note", "type": "string" },
+        { "title": "Brouillon (non publié)", "name": "brouillon", "type": "boolean", "default": false }
+      ]
+    }
+  ]
+}
