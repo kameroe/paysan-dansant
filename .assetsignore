@@ -9,3 +9,5 @@ pages
 modeles
 build.js
 node_modules
+.wrangler
+.gitignore
