@@ -10,7 +10,6 @@
       classées par numéro, la plus récente en haut.
 
    MODÈLE À COPIER :
-
   {
     numero: 4,
     date: "29 oct. 2026",
