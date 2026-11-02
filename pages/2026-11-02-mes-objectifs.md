@@ -5,7 +5,7 @@ ciel: aurore d'une semaine chargée
 image: images/carnet-11-02.jpeg
 ---
 
-Voici une liste de mes 12 objectifs/quêtes/pistes encore ouverts, par ordre chronologique du plus court terme au plus long terme, une fois mes études terminées, même si l'on n'arrête jamais d'apprendre : 
+Voici une liste de mes 12 quêtes, pistes, objectifs encore ouverts, par ordre chronologique du plus court terme au plus long terme, une fois mes études terminées, même si l'on n'arrête jamais d'apprendre : 
 
 1. Partir en voyage et faire du wwoofing
 2. Développer ma culture G (histoire, géographie, philosophie) et m'ouvrir à d'autres cultures et langues
