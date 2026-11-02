@@ -1,6 +1,6 @@
 ---
 title: Mes 12 objectifs 
-date: 2026-11-02
+date: 2026-11-02 10:20
 ciel: aurore d'une semaine chargée
 ---
 

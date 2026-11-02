@@ -11,7 +11,7 @@
     }
   ],
   "frontMatter.templates.folder": "modeles",
-  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd",
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm",
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",

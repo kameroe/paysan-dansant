@@ -26,7 +26,7 @@ git commit -m "Nouvelle page : balade du dimanche"
 git push
 ```
 
-Le site se met à jour tout seul en une à deux minutes. Les pages sont numérotées et classées par date automatiquement.
+Le site se met à jour tout seul en une à deux minutes. Les pages sont numérotées et classées par date automatiquement. Si deux pages ont la même date, ajoute l'heure pour choisir l'ordre : `date: 2026-11-02 10:20` (la plus tardive passe en haut).
 
 Avec l'extension **Front Matter CMS**, tu peux aussi cliquer sur son icône à gauche dans VS Code, puis « Create content » : il crée le fichier et te propose les champs.
 

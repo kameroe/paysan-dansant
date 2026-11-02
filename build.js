@@ -97,7 +97,9 @@ fichiers.forEach((f) => {
   pages.push({ f, meta, corps });
 });
 
-pages.sort((a, b) => String(a.meta.date || "").slice(0, 10).localeCompare(String(b.meta.date || "").slice(0, 10)) || a.f.localeCompare(b.f));
+// Classement par date, puis par heure si elle est indiquée (date: 2026-11-02 10:20)
+const cleDate = (m) => String(m.date || "").trim().replace("T", " ");
+pages.sort((a, b) => cleDate(a.meta).localeCompare(cleDate(b.meta)) || a.f.localeCompare(b.f));
 
 const carnet = pages.map(({ f, meta, corps }, i) => {
   const p = { numero: i + 1, fichier: f, date: dateLisible(meta.date), html: markdownEnHtml(corps) };
