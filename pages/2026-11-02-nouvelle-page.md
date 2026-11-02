@@ -27,5 +27,3 @@ Considération intempestive : aimer est tout, être aimé est difficile, car on 
 
 Au lieu de vouloir changer le monde pour qu'il corresponde à nos désirs, il faudrait peut-être changer notre regard sur le monde et rentrer en soi-même pour pouvoir comprendre que ce que nous voulons est bien autre chose en réalité. Quelque chose de bien plus simple que nous appellerons la vie. 
 Aujourd'hui, tout le monde est mort car tout le monde est figé dans une identité beaucoup trop loin de son soi véritable. 
-
-
