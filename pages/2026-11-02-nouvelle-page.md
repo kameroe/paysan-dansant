@@ -1,5 +1,5 @@
 ---
-title: 
+title: Considérations intempestives
 date: 2026-11-02
 ciel: nuit froide
 image: images/chambre2-11-26.jpeg
