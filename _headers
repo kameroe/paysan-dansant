@@ -1,0 +1,8 @@
+# Oblige le navigateur à vérifier s'il y a une nouvelle version
+# de la page et du carnet à chaque visite (pas d'ancienne copie).
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/carnet.js
+  Cache-Control: no-cache
