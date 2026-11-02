@@ -3,7 +3,6 @@ title:
 date: 2026-11-02
 ciel: nuit froide
 image: images/chambre2-11-26.jpeg
-legende: ma chambre à St-enfance 
 audio: audios/K. - Cigarettes After Sex.mp3
 pensee: « J’ai beaucoup vécu, et il me semble avoir trouvé ce qu’il faut pour être heureux. Une vie tranquille et retirée à la campagne, avec la possibilité de faire du bien à des gens à qui il est facile d’en faire et qui n’y sont pas habitués ; puis un travail qui, on l’espère, est utile ; puis le repos, la nature, les livres, la musique, l’amour du prochain : voilà mon bonheur. Et par-dessus tout cela, toi pour compagne, et des enfants peut-être. Que peut désirer de plus un homme ? » - Bonheur conjugal de Tolstoï
 ---
