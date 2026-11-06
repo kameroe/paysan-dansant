@@ -1,11 +1,7 @@
 ---
-title: Le titre de ta page
-ciel: soleil d'automne
-image: images/nom-de-ta-photo.jpg
-legende: une petite légende sous l'image
-audio: audios/nom-de-ton-son.mp3
-pensee: Une citation ou une réflexion, en italique.
-note: une annotation manuscrite dans la marge
+title: L'angoisse génerationnelle
+ciel: soleil et ciel bleu
+image: images/paysage-06-11-26.jpg
 date: 2026-11-06
 ---
 Ça me fait penser à une vidéo sur l'angoisse de l'insuffisance : quand on a l'impression de perdre notre temps parce qu'on ne fait pas ce qu'on s'était dit de faire et que, soi-disant, on devrait faire pour nous-mêmes, alors que l'activité en question ne nous procurera pas forcément plus de bonheur, et peut-être, sur le long terme, plus de malheur. Selon la vidéo, c'est ce qui causerait, pour résumer, notre dépression générationnelle. On peut aussi faire le lien avec le paradoxe du choix, les deux sont liés car ce trop de choix, en est la condition de la possibilité de s'individualiser par un choix qui nous est propre afin de devenir ce que l'on veut. Et, au final, ce que dit la vidéo, c'est que nous devrions nous imposer un cadre, remettre à jour certaines traditions, ne pas considérer les fêtes ou les jours spéciaux comme banals et sans aucune importance, arrêter de considérer la vie comme un moyen de devenir ce que l'on veut, en se décentrant de nous-mêmes pour arrêter ce nombrilisme stérile, arrêter de considérer l'individu comme une fin atteinte par un procédé visant à élever directement l'individu, mais plutôt comme une fin atteinte par la transcendance de sa condition en élevant l'individu à l'œuvre qu'il crée pour une communauté qui le comprend et qui s'en inspire. Et ce que je retiens le plus, c'est que pour nous soigner d'une overdose d'individualisme, il ne faut pas plus d'individualisme, mais plus de partage, de lenteur et de compréhension.
